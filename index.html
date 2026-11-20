@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07192c">
+  <meta name="description" content="A practical, interactive phishing awareness training program.">
+  <title>Phishing Awareness Program</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Phishing Awareness Program home">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span>SECURE<span class="brand-light">/LEARN</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="#learn">Learn</a>
+      <a href="#spotting">Red flags</a>
+      <a href="#simulation">Practice</a>
+      <a href="#quiz">Knowledge check</a>
+      <a class="nav-cta" href="#certificate">Your certificate <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SECURITY AWARENESS · LEARNING PATH</p>
+        <h1>Pause. Verify.<br><span>Stay one step ahead.</span></h1>
+        <p class="hero-intro">Phishing is designed to catch you off guard. Learn how to spot the signals, practice with safe examples, and build habits that protect you and your organization.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#learn">Start learning <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#simulation">Try a practice scenario <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">i</span> Fictional examples only. This training never asks for real passwords or personal information.</div>
+      </div>
+      <div class="hero-visual" aria-label="Training progress dashboard">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shield-card">
+          <div class="shield-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 72" role="img"><path d="M32 4 56 13v18c0 16-10 28-24 36C18 59 8 47 8 31V13L32 4Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m22 34 7 7 14-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>
+          </div>
+          <p class="tiny-label">YOUR SECURITY HABITS</p>
+          <h2>Built one decision<br>at a time.</h2>
+          <div class="visual-metric"><span>Learning progress</span><strong id="hero-progress-label">0%</strong></div>
+          <div class="progress-track"><span id="hero-progress-bar"></span></div>
+          <p class="visual-foot"><span class="status-dot"></span> Progress saved on this device</p>
+        </div>
+        <span class="float-tag tag-top"><span aria-hidden="true">✓</span> Verify the sender</span>
+        <span class="float-tag tag-bottom"><span aria-hidden="true">↗</span> Inspect the link</span>
+        <span class="hero-coordinate">01 / 06 &nbsp;·&nbsp; YOUR LEARNING PATH</span>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Training overview">
+      <div><strong>06</strong><span>Learning modules</span></div>
+      <div><strong>04</strong><span>Practice scenarios</span></div>
+      <div><strong>12</strong><span>Quiz questions</span></div>
+      <div class="stats-message"><span class="status-dot"></span> Go at your own pace. Your progress stays in this browser.</div>
+    </section>
+
+    <section class="section section-wrap" id="learn">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 — THE BASICS</p><h2>Understand the threat.</h2></div>
+        <p>Knowing how social engineering works makes suspicious messages easier to recognize—and safer to handle.</p>
+      </div>
+      <div class="intro-grid">
+        <article class="definition-card">
+          <span class="card-index">01 / 06</span>
+          <span class="line-icon" aria-hidden="true">⌁</span>
+          <h3>What is phishing?</h3>
+          <p>Phishing is a form of social engineering in which an attacker impersonates a trusted person or organization to persuade someone to reveal information, open a harmful file, send money, or take another risky action.</p>
+          <p class="definition-callout">The message is the bait. Your attention is the target.</p>
+          <button class="complete-button" type="button" data-complete="understanding" aria-pressed="false">Mark module complete <span aria-hidden="true">＋</span></button>
+        </article>
+        <div class="how-card">
+          <p class="eyebrow">A COMMON ATTACK FLOW</p>
+          <div class="flow-step"><span>01</span><div><strong>Make contact</strong><p>A message arrives unexpectedly, appearing to come from someone you trust.</p></div></div>
+          <div class="flow-step"><span>02</span><div><strong>Create a reason to act</strong><p>Urgency, curiosity, fear, or a tempting reward pushes you to respond quickly.</p></div></div>
+          <div class="flow-step"><span>03</span><div><strong>Ask for a risky action</strong><p>Click a link, open an attachment, share a code, or change payment details.</p></div></div>
+          <div class="flow-step"><span>04</span><div><strong>Exploit the result</strong><p>Information or access may be used for account takeover, fraud, or further attacks.</p></div></div>
+        </div>
+      </div>
+      <div class="type-grid" aria-label="Types of phishing">
+        <article class="type-card"><span class="type-symbol">✉</span><h3>Email phishing</h3><p>Bulk messages that imitate familiar brands or services.</p></article>
+        <article class="type-card"><span class="type-symbol">⌖</span><h3>Spear phishing</h3><p>Tailored messages aimed at a specific person or team.</p></article>
+        <article class="type-card"><span class="type-symbol">♜</span><h3>Whaling</h3><p>Targeted impersonation of senior leaders or executives.</p></article>
+        <article class="type-card"><span class="type-symbol">▣</span><h3>Smishing</h3><p>Phishing delivered through SMS or messaging apps.</p></article>
+        <article class="type-card"><span class="type-symbol">◖</span><h3>Vishing</h3><p>Voice calls that pressure people to disclose or do something.</p></article>
+        <article class="type-card"><span class="type-symbol">⧉</span><h3>Clone phishing</h3><p>A copied message with a link or attachment swapped for a malicious one.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="spotting">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 — RECOGNIZE THE SIGNS</p><h2>Look closer before you click.</h2></div>
+          <p>One clue does not prove a message is fraudulent. Look for mismatches, unexpected requests, and pressure to act outside normal processes.</p>
+        </div>
+        <div class="red-flag-grid">
+          <article class="flag-card">
+            <div class="flag-card-head"><span class="flag-icon" aria-hidden="true">✉</span><span class="badge badge-risk">EMAIL</span></div>
+            <h3>Suspicious messages</h3>
+            <ul class="check-list">
+              <li><span class="risk-mark">!</span><span><b>Sender mismatch</b><small>Display name says “IT Helpdesk”; the address is an unrelated domain.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Artificial urgency</b><small>Threats of immediate account closure or unusual deadlines.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Unexpected attachment</b><small>Especially when you were not expecting a file or invoice.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Odd wording or links</b><small>Unusual grammar, unexpected requests, or link text that hides its destination.</small></span></li>
+            </ul>
+          </article>
+          <article class="flag-card">
+            <div class="flag-card-head"><span class="flag-icon" aria-hidden="true">⌑</span><span class="badge badge-risk">LOGIN PAGES</span></div>
+            <h3>Fake sign-in screens</h3>
+            <ul class="check-list">
+              <li><span class="risk-mark">!</span><span><b>Lookalike domain</b><small>Extra words, swapped characters, or an unexpected domain ending.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Unexpected sign-in prompt</b><small>A link in an unsolicited message asks you to re-enter credentials.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>HTTPS is not proof</b><small>Encryption protects a connection; it does not prove a site is trustworthy.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Odd context</b><small>The branding, request, or sign-in flow does not match your usual service.</small></span></li>
+            </ul>
+          </article>
+          <article class="flag-card">
+            <div class="flag-card-head"><span class="flag-icon" aria-hidden="true">◎</span><span class="badge badge-risk">WEBSITES</span></div>
+            <h3>Untrustworthy destinations</h3>
+            <ul class="check-list">
+              <li><span class="risk-mark">!</span><span><b>Misspelled URL</b><small>Read the full domain carefully, from right to left before the path.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Too-good-to-be-true offer</b><small>Prizes or discounts that require immediate action or sensitive details.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Unexpected redirects</b><small>A link takes you somewhere different from what you expected.</small></span></li>
+              <li><span class="risk-mark">!</span><span><b>Pressure to share data</b><small>Do not use a page just because it looks polished or familiar.</small></span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="example-strip">
+          <span class="example-label">SPOT THE MISMATCH</span>
+          <p><span class="mock-from">From: Northstar Bank Support</span> <span class="risk-underline">security@northstar-alerts.example.invalid</span> — “Your account will be locked in 10 minutes. <span class="risk-underline">Verify now</span>.”</p>
+          <span class="example-note">Unexpected urgency + unrelated sender domain + sign-in link = pause and verify another way.</span>
+        </div>
+        <button class="complete-button complete-dark" type="button" data-complete="spotting" aria-pressed="false">Mark module complete <span aria-hidden="true">＋</span></button>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="social">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 — THE HUMAN ELEMENT</p><h2>Understand the pressure tactics.</h2></div>
+        <p>Attackers often exploit normal human instincts. Recognizing the tactic gives you a moment to slow down and check.</p>
+      </div>
+      <div class="tactic-grid">
+        <article><span class="tactic-number">01</span><h3>Fear & urgency</h3><p>“A suspicious login was detected—act now or lose access.” The deadline is designed to crowd out careful checks.</p></article>
+        <article><span class="tactic-number">02</span><h3>Authority</h3><p>“The director needs gift cards before the meeting.” A claimed senior role should not bypass verification.</p></article>
+        <article><span class="tactic-number">03</span><h3>Trust</h3><p>“Here is the document we discussed.” A familiar name or copied conversation can still carry an unsafe link.</p></article>
+        <article><span class="tactic-number">04</span><h3>Curiosity & greed</h3><p>“See the confidential announcement” or “claim your surprise prize.” Unexpected rewards can be bait.</p></article>
+        <article><span class="tactic-number">05</span><h3>Impersonation</h3><p>A caller claiming to be your bank asks you to “confirm” a one-time code. Hang up and call a trusted number.</p></article>
+        <article><span class="tactic-number">06</span><h3>Business email compromise</h3><p>A message that appears to come from a leader or supplier requests a payment or bank-detail change. Confirm through a known, separate channel.</p></article>
+      </div>
+      <div class="pause-banner"><span class="pause-mark" aria-hidden="true">Ⅱ</span><p><strong>Make a pause your superpower.</strong> Unexpected request? Stop, verify it through a channel you already trust, and follow your organization’s reporting process.</p></div>
+      <button class="complete-button" type="button" data-complete="social" aria-pressed="false">Mark module complete <span aria-hidden="true">＋</span></button>
+    </section>
+
+    <section class="section case-section" id="cases">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">04 — LESSONS FROM THE FIELD</p><h2>Real incidents. Lasting lessons.</h2></div>
+          <p>These summaries distinguish publicly documented incidents from simplified training scenarios. They are not step-by-step attack instructions.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-top"><span class="case-year">2013–2015</span><span class="badge badge-fact">DOCUMENTED FACTS</span></div>
+            <h3>Google & Facebook: invoice fraud</h3>
+            <p>U.S. court records describe a Lithuanian man using spoofed business emails and fraudulent invoices to induce Google and Facebook employees to send more than $100 million to bank accounts he controlled.</p>
+            <div class="case-detail"><b>Signals & impact</b><span>Spoofed business correspondence and fraudulent invoices led to more than $100 million in transfers.</span></div>
+            <div class="case-detail"><b>Lesson</b><span>Independently verify supplier changes and large or unusual payment requests. A familiar business relationship is not verification.</span></div>
+            <a class="source-link" href="https://www.justice.gov/usao-sdny/pr/lithuanian-man-pleads-guilty-100-million-fraud-scheme-targeting-google-and-facebook" target="_blank" rel="noreferrer">U.S. Department of Justice summary ↗</a>
+          </article>
+          <article class="case-card">
+            <div class="case-top"><span class="case-year">2013</span><span class="badge badge-fact">DOCUMENTED FACTS</span></div>
+            <h3>Target: third-party access</h3>
+            <p>Investigations into the 2013 Target breach reported that attackers used credentials stolen from a third-party HVAC vendor to gain an initial foothold before reaching Target’s payment systems. The incident exposed payment-card data and personal information belonging to millions of customers.</p>
+            <div class="case-detail"><b>Signals</b><span>Compromised vendor access and unusual movement from a third-party foothold toward payment systems.</span></div>
+            <div class="case-detail"><b>Lesson</b><span>Protect vendor access, use least privilege and MFA where available, and investigate unusual access patterns.</span></div>
+            <a class="source-link" href="https://www.govinfo.gov/content/pkg/CHRG-113hhrg86289/pdf/CHRG-113hhrg86289.pdf" target="_blank" rel="noreferrer">U.S. Senate hearing record ↗</a>
+          </article>
+          <article class="case-card case-illustrative">
+            <div class="case-top"><span class="case-year">ONGOING PATTERN</span><span class="badge badge-example">ILLUSTRATIVE SUMMARY</span></div>
+            <h3>Microsoft 365 credential lures</h3>
+            <p>Training scenario based on a widely observed pattern—not one specific campaign: an unexpected document-share notice leads to a lookalike sign-in page that asks for account credentials.</p>
+            <div class="case-detail"><b>Signals & risk</b><span>Unexpected sharing notice and a mismatched sign-in domain; entered credentials could put an account at risk.</span></div>
+            <div class="case-detail"><b>Lesson</b><span>Open your organization’s service through a known bookmark or app, not an unexpected sign-in link. Report the message.</span></div>
+            <span class="source-link source-static">Illustrative example; no real brand or campaign is depicted.</span>
+          </article>
+        </div>
+        <button class="complete-button" type="button" data-complete="cases" aria-pressed="false">Mark module complete <span aria-hidden="true">＋</span></button>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="safety">
+      <div class="section-heading">
+        <div><p class="eyebrow">05 — SAFER EVERY DAY</p><h2>Small habits. Stronger defenses.</h2></div>
+        <p>Use these practical checks at work and at home. If you make a mistake, report it promptly—fast reporting can help limit harm.</p>
+      </div>
+      <div class="tips-layout">
+        <div class="tips-list">
+          <div><span class="tip-check">✓</span><p><b>Verify the sender</b><small>Inspect the full address, not just the display name. Confirm unusual requests independently.</small></p></div>
+          <div><span class="tip-check">✓</span><p><b>Inspect links and destinations</b><small>Navigate using a known bookmark or typed address instead of an unexpected link.</small></p></div>
+          <div><span class="tip-check">✓</span><p><b>Use MFA and unique passwords</b><small>Prefer phishing-resistant MFA when available. A password manager helps create and store unique passwords.</small></p></div>
+          <div><span class="tip-check">✓</span><p><b>Handle files with care</b><small>Do not open unexpected attachments. Verify with the sender through a separate trusted channel.</small></p></div>
+          <div><span class="tip-check">✓</span><p><b>Report and update</b><small>Use your organization’s reporting process. Keep browsers, devices, and software up to date.</small></p></div>
+        </div>
+        <aside class="response-card">
+          <span class="response-kicker">IF YOU CLICKED OR SHARED INFORMATION</span>
+          <h3>Act quickly.<br>There is no shame in reporting.</h3>
+          <ol><li>Contact your IT or security team using a known channel.</li><li>If you entered a password, change it from a trusted device and tell your team.</li><li>Follow your organization’s instructions; do not delete evidence or forward the message unless asked.</li></ol>
+          <span class="response-footer">Prompt reporting helps protect everyone.</span>
+        </aside>
+      </div>
+      <button class="complete-button" type="button" data-complete="safety" aria-pressed="false">Mark module complete <span aria-hidden="true">＋</span></button>
+    </section>
+
+    <section class="section simulation-section" id="simulation">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">06 — SAFE PRACTICE</p><h2>Can you spot the signal?</h2></div>
+          <p>Review each fictional email or web page. Decide whether it is legitimate or phishing, then read the explanation. No links navigate and no credentials are collected.</p>
+        </div>
+        <div class="simulation-panel">
+          <div class="simulation-sidebar">
+            <span class="tiny-label">PRACTICE LAB</span>
+            <h3>Trust your checks,<br>not your first glance.</h3>
+            <p>Four short scenarios. Take your time and look for the context clues.</p>
+            <div class="scenario-counter"><span id="scenario-current">01</span><span class="counter-divider">/</span><span id="scenario-total">04</span></div>
+            <div class="scenario-progress" id="scenario-progress" aria-label="Scenario progress"></div>
+            <span class="fiction-note"><span aria-hidden="true">◇</span> All names and domains are fictional.</span>
+          </div>
+          <div class="scenario-area" aria-live="polite">
+            <div class="scenario-meta"><span id="scenario-kind" class="badge badge-neutral">EMAIL</span><span id="scenario-title">A message to review</span></div>
+            <div id="scenario-content" class="scenario-content"></div>
+            <div id="scenario-choices" class="scenario-choices">
+              <p class="choice-prompt">What do you think?</p>
+              <div class="choice-buttons">
+                <button class="choice-button choice-safe" type="button" data-answer="legitimate"><span aria-hidden="true">✓</span> Looks legitimate</button>
+                <button class="choice-button choice-risk" type="button" data-answer="phishing"><span aria-hidden="true">!</span> This is phishing</button>
+              </div>
+            </div>
+            <div id="scenario-feedback" class="scenario-feedback" hidden aria-live="polite"></div>
+            <button id="scenario-next" class="button button-primary scenario-next" type="button" hidden>Next scenario <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <p class="simulation-disclaimer">Simulation only: <code>.invalid</code> is a reserved domain ending that cannot be used as a real destination. The sample sign-in form below is a non-interactive illustration.</p>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-wrap quiz-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">07 — CHECK YOUR KNOWLEDGE</p><h2>Ready for the knowledge check?</h2></div>
+          <p>12 questions, one at a time. Choose an answer for instant feedback and an explanation. A score of 70% or higher, plus completed modules, unlocks your certificate.</p>
+        </div>
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-topline"><span class="badge badge-neutral">KNOWLEDGE CHECK</span><span id="quiz-best">Best score: —</span></div>
+          <div id="quiz-content">
+            <div class="quiz-progress-label"><span id="quiz-question-number">Question 1 of 12</span><span id="quiz-percent">0%</span></div>
+            <div class="progress-track quiz-track"><span id="quiz-progress-bar"></span></div>
+            <h3 id="quiz-question" class="quiz-question"></h3>
+            <div id="quiz-options" class="quiz-options"></div>
+            <div id="quiz-feedback" class="quiz-feedback" hidden aria-live="polite"></div>
+            <button id="quiz-next" class="button button-primary quiz-next" type="button" hidden>Next question <span aria-hidden="true">→</span></button>
+          </div>
+          <div id="quiz-result" class="quiz-result" hidden aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certificate-section" id="certificate">
+      <div class="section-wrap certificate-layout">
+        <div class="certificate-copy">
+          <p class="eyebrow">YOUR NEXT STEP</p>
+          <h2>Finish informed.<br><span>Leave more prepared.</span></h2>
+          <p>Complete all six learning modules and earn at least 70% on the quiz to unlock your printable certificate. Your training record is stored only in this browser.</p>
+          <div id="completion-status" class="completion-status" role="status" aria-live="polite"><span class="status-dot"></span><span>Complete the modules and quiz to unlock your certificate.</span></div>
+        </div>
+        <div class="certificate-preview" id="certificate-preview">
+          <div class="certificate-inner">
+            <span class="cert-emblem" aria-hidden="true">P</span>
+            <p class="cert-overline">CERTIFICATE OF COMPLETION</p>
+            <h3>Phishing Awareness<br>Training Certificate</h3>
+            <p class="cert-subtitle">Presented for completing the interactive security awareness learning path.</p>
+            <div class="cert-rule"></div>
+            <p class="cert-score-label">QUIZ SCORE</p><p class="cert-score" id="certificate-score">—</p>
+            <div class="cert-footer"><span>SECURE/LEARN</span><span id="certificate-date">COMPLETE TRAINING TO UNLOCK</span></div>
+          </div>
+          <button id="print-certificate" class="button button-primary print-button" type="button" disabled>Print certificate <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">P</span><span>SECURE<span class="brand-light">/LEARN</span></span></a>
+    <p>Pause. Verify. Protect.</p>
+    <p class="footer-note">Educational resource · Fictional training examples · No personal data collected</p>
+  </footer>
+</body>
+</html>
